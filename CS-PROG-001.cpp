@@ -13,7 +13,7 @@ void modififunc(int val , int *ref){
   *ref = 99 ; 
 }
 
-int sumRecursive(int n, std::vector<int>& ExecutionLog) {
+int sumRecursive(int n, vector<int>& ExecutionLog) {
     // Static Variable: Lifetime lasts until the program ends. Scope is local to this function.
     static int callCount = 0; 
     callCount++;
@@ -40,8 +40,11 @@ int main(){
   cout<<num1 <<  endl ; 
   cout<<num2 ;       
 
-  std::vector<int> log;
+   vector<int> log;
     int totalSum = sumRecursive(3, log);
+    cout<<totalSum ;        
+
 
 }
+
 
